@@ -29,3 +29,43 @@ The illustration below refers to the logical architecture implemented to prove t
 **ElasticSearch:** Stores logs
 
 **Kibana/Nginx**: Web interface for searching and viewing the logs that are proxied by Nginx
+
+## Deployment
+
+The deployment of the environment is done using Azure CLI commands in a shell script. In addition to serving as documentation on the services that have been deployed, they are a  good practice on IaC.
+
+The script will perform the following steps:
+
+1. Create the resource group
+2. Create the Redis service
+3. Create a VNET called myVnet with the prefix 10.0.0.0/16 and a subnet called mySubnet with the prefix 10.0.1.0/24
+4. Create the Application server VM
+   * Size: Standard_D2S_v3
+   * User: elk
+   * SSH keys: Public and private keys will be generated in ~/.ssh. To access the VMs run ssh -i ~/.ssh /id_rsa elk@<ip>
+5. Log Generator Installation/Configuration
+6. Installation / Configuration of Filebeat
+7. Filebeat Start
+8. Create the ElasticSearch server VM
+9. Configure NSG and free access on port 9200 for subnet 10.0.1.0/24
+10. Install Java
+11. Installing/Configuring ElasticSearch
+12. ElasticSearch Start
+13. Create the Logstash server VM
+14. Logstash Installation / Configuration
+15. Logstash Start
+16. Create the Kibana server VM
+17. Configure NSG and allow access on port 80 to 0.0.0.0/0
+18. Installing/Configuring Kibana
+19. Installing/Configuring Nginx
+
+## Script to setup ELK Stack
+
+Available at: [https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b](https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b). Just download then:
+
+```
+chmod a+x elk-stack-azure.sh
+./elk-stack-azure.sh
+```
+
+## Finishing the setup
