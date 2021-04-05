@@ -74,11 +74,11 @@ To finish the setup, the next step is to connect to the public IP address of the
 
 ![kibana-1](/kibana-1.png)
 
-Then click to create the index pattern:
+Then click to create the index pattern. Complete the step 1 adding the patter **logstash***. After this click to **Create index pattern**.
 
 ![kibana-2](/kibana-2.png)
 
-In this case, let's create the pattern logstash:
+In the step 2 let's configure an additional setting by **@timestamp**:
 
 ![kibana-3](/kibana-3.png)
 
