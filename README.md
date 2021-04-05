@@ -74,7 +74,7 @@ To finish the setup, the next step is to connect to the public IP address of the
 
 ![kibana-1](/kibana-1.png)
 
-Then click on Discover where we will create the indexing pattern:
+Then click to create the index pattern:
 
 ![kibana-2](/kibana-2.png)
 
