@@ -22,7 +22,7 @@ The illustration below refers to the logical architecture implemented to prove t
 
 **Azure Redis Service**: Managed data storage service in memory. It was used because search engines can be an operational nightmare. Indexing can bring down a traditional cluster and data can end up being reindexed for a variety of reasons. Thus, the choice of Redis between the event source and parsing and processing is only to index/parse as fast as the nodes and databases involved can manipulate this data allowing it to be possible to extract directly from the flow of events instead to have events being inserted into the pipeline. Through Redis Monitor it is possible to see exactly what is happening in Redis: Filebeat sending the data and Logstash asking for them:
 
-![redis](/redis.png)
+![redis](/redis-console.png)
 
 **Logstash:** Processes and indexes the logs by reading from Redis and submitting to ElasticSearch.
 
