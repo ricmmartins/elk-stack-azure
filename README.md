@@ -42,7 +42,7 @@ The script will perform the following steps:
 4. Create the Application server VM
    * Size: Standard_D2S_v3
    * User: elk
-   * SSH keys: Public and private keys will be generated in ~/.ssh. To access the VMs run ssh -i ~/.ssh /id_rsa elk@<ip>
+   * SSH keys: Public and private keys will be generated in ~/.ssh. To access the VMs run ssh -i ~/.ssh /id_rsa elk@ip
 5. Log Generator Installation/Configuration
 6. Installation / Configuration of Filebeat
 7. Filebeat Start
