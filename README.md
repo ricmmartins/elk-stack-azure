@@ -40,33 +40,34 @@ The script will perform the following steps:
 2. Create the Redis service
 3. Create a VNET called myVnet with the prefix 10.0.0.0/16 and a subnet called mySubnet with the prefix 10.0.1.0/24
 4. Create the Application server VM
-   * Size: Standard_D2S_v3
-   * User: elk
-   * SSH keys: Public and private keys will be generated in ~/.ssh. To access the VMs run ssh -i ~/.ssh /id_rsa elk@ip
 5. Log Generator Installation/Configuration
 6. Installation / Configuration of Filebeat
 7. Filebeat Start
 8. Create the ElasticSearch server VM
 9. Configure NSG and free access on port 9200 for subnet 10.0.1.0/24
 10. Install Java
-11. Installing/Configuring ElasticSearch
-12. ElasticSearch Start
+11. Install/Configure ElasticSearch
+12. Start ElasticSearch 
 13. Create the Logstash server VM
-14. Logstash Installation / Configuration
-15. Logstash Start
+14. Install/Configure Logstash
+15. Start Logstash
 16. Create the Kibana server VM
 17. Configure NSG and allow access on port 80 to 0.0.0.0/0
-18. Installing/Configuring Kibana
-19. Installing/Configuring Nginx
+18. Install/Configure Kibana and Nginx
+
+> Note that Linux User is set to **elk**. Public and private keys will be generated in ~/.ssh. To access the VMs run ssh -i ~/.ssh /id_rsa elk@ip
 
 ## Script to setup ELK Stack
 
-Available at: [https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b](https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b). Just download then:
+The script is available at: [https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b](https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b). Just download then:
 
 ```
 chmod a+x elk-stack-azure.sh
 ./elk-stack-azure.sh <resource group name> <location> <redis name>
 ```
+
+![cloudshell](/images/cloudshell.png)
+
 
 ## Finishing the setup
 
