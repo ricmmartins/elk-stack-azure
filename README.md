@@ -67,6 +67,7 @@ chmod a+x elk-stack-azure.sh
 ```
 ![cloudshell](/images/cloudshell.png)
 
+After a few minutes the execution of the script will be completed, then you have just to finish the setup through the kibana.
 
 ## Finishing the setup
 
