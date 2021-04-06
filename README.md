@@ -61,6 +61,8 @@ The script will perform the following steps:
 
 ## Script to setup ELK Stack
 
+<script src="https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b.js"></script>
+
 The script is available at: [https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b](https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b). Just download then:
 
 ```
