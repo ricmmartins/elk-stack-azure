@@ -88,7 +88,7 @@ On the step 2 of 2, point to **@timestamp**
 
 ![kibana-5](/images/kibana-5.png)
 
-![kibana-5](/images/kibana-5-1.png)
+![kibana-5-1](/images/kibana-5-1.png)
 
 Then click to **Create index pattern**
 
