@@ -13,7 +13,6 @@ The illustration below refers to the logical architecture implemented to prove t
 
 ![flow](/images/flow.png)
 
-
 ## Description of components
 
 **Application Server**: To simulate an application server generating logs, a script was used that generates logs randomly. The source code for this script is available at [https://github.com/bitsofinfo/log-generator](https://github.com/bitsofinfo/log-generator). It was configured to generate the logs in /tmp/log-sample.log.
@@ -21,10 +20,6 @@ The illustration below refers to the logical architecture implemented to prove t
 **Filebeat**: Agent installed on the application server and configured to send the generated logs to Azure Redis. Filebeat has the function of shipping the logs using the lumberjack protocol.
 
 **Azure Redis Service**: Managed service for in-memory data storage. It was used because search engines can be an operational nightmare. Indexing can bring down a traditional cluster and data can end up being reindexed for a variety of reasons. Thus, the choice of Redis between the event source and parsing and processing is only to index/parse as fast as the nodes and databases involved can manipulate this data allowing it to be possible to extract directly from the flow of events instead to have events being inserted into the pipeline. 
-
-Through Redis Monitor it is possible to see exactly what is happening on Redis (filebeat sending the data and Logstash asking for them):
-
-![redis](/images/redis-console.png)
 
 **Logstash:** Processes and indexes the logs by reading from Redis and submitting to ElasticSearch.
 
@@ -60,8 +55,6 @@ The script will perform the following steps:
 > Note that Linux User is set to **elk**. Public and private keys will be generated in ~/.ssh. To access the VMs run ssh -i ~/.ssh /id_rsa elk@ip
 
 ## Script to setup ELK Stack
-
-<script src="https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b.js"></script>
 
 The script is available at: [https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b](https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b). Just download then:
 
