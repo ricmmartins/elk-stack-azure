@@ -65,7 +65,6 @@ The script is available at: [https://gist.github.com/ricmmartins/fffbf5cfeb019c7
 chmod a+x elk-stack-azure.sh
 ./elk-stack-azure.sh <resource group name> <location> <redis name>
 ```
-
 ![cloudshell](/images/cloudshell.png)
 
 
