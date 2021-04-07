@@ -29,7 +29,7 @@ The illustration below refers to the logical architecture implemented to prove t
 
 ## Deployment
 
-The deployment of the environment is done using Azure CLI commands in a shell script. In addition to serving as documentation on the services that have been deployed, they are a  good practice on IaC. In this demo I'll be using [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview) once is fully integrated to Azure.
+The deployment of the environment is done using Azure CLI commands in a shell script. In addition to serving as documentation about the services deployed, they are a  good practice on IaC. In this demo I'll be using [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview) once is fully integrated to Azure.
 
 The script will perform the following steps:
 
@@ -41,7 +41,7 @@ The script will perform the following steps:
 6. Installation / Configuration of Filebeat
 7. Filebeat Start
 8. Create the ElasticSearch server VM
-9. Configure NSG and free access on port 9200 for subnet 10.0.1.0/24
+9. Configure NSG and allow access on port 9200 for subnet 10.0.1.0/24
 10. Install Java
 11. Install/Configure ElasticSearch
 12. Start ElasticSearch 
@@ -80,7 +80,7 @@ Now click on **Create index pattern**
 
 ![kibana-3](/images/kibana-3.png)
 
-Oo the next screen type **logstash** on the step 1 of 2, then click to **Next step**
+On the next screen type **logstash** on the step 1 of 2, then click to **Next step**
 
 ![kibana-4](/images/kibana-4.png)
 
