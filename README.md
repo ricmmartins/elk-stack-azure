@@ -56,7 +56,7 @@ The script will perform the following steps:
 
 ## Script to setup ELK Stack
 
-The script is available at: [https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b](https://gist.github.com/ricmmartins/fffbf5cfeb019c70ec029eab5192421b). Just download then:
+The script is [available here](/elk-stack-azure.sh). Just download then execute the following:
 
 ```
 chmod a+x elk-stack-azure.sh
