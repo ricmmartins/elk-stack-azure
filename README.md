@@ -64,6 +64,7 @@ The script will perform the following steps:
 The script is [available here](/elk-stack-azure.sh). Just download then execute the following:
 
 ```
+wget https://raw.githubusercontent.com/ricmmartins/elk-stack-azure/main/elk-stack-azure.sh
 chmod a+x elk-stack-azure.sh
 ./elk-stack-azure.sh <resource group name> <location> <redis name>
 ```
