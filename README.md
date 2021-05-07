@@ -31,6 +31,11 @@ The illustration below refers to the logical architecture implemented to prove t
 
 The deployment of the environment is done using Azure CLI commands in a shell script. In addition to serving as documentation about the services deployed, they are a  good practice on IaC. In this demo I'll be using [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview) once is fully integrated to Azure.
 
+I'll be using the Azure Cloud Shell once is fully integrated to Azure and with all modules I need already installed. Make sure to swhich to Bash:
+
+![select-shell](/images/select-shell-drop-down.png)
+
+
 The script will perform the following steps:
 
 1. Create the resource group
